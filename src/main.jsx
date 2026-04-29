@@ -48,12 +48,12 @@ const router = createBrowserRouter([
         //this will be a private Route
         element:<SecretRoute><PropertiesDetails ></PropertiesDetails></SecretRoute>,
 
-        loader:({params})=>fetch(`https://e-state-server-jh3i81lpb-md-mahrufs-projects.vercel.app/property/${params.id}`)
+        loader:({params})=>fetch(`https://e-state-server.vercel.app/property/${params.id}`)
         
       },{
       path:'review/:title',
       element:<ItemReviews></ItemReviews>,
-      // loader:({params})=>fetch(`https://e-state-server-jh3i81lpb-md-mahrufs-projects.vercel.app/review/${params.title}`)
+      // loader:({params})=>fetch(`https://e-state-server.vercel.app/review/${params.title}`)
       }
       ,
       {
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
       {
         path:'makeanoffer/:id',
         element:<MakeanOffer></MakeanOffer>,
-        loader:({params})=>fetch(`https://e-state-server-jh3i81lpb-md-mahrufs-projects.vercel.app/wishlist/${params.id}`)
+        loader:({params})=>fetch(`https://e-state-server.vercel.app/wishlist/${params.id}`)
       }
     ]
   },{
@@ -110,7 +110,7 @@ const router = createBrowserRouter([
     
         path:'/addReview/:id',
         element:<AddReview></AddReview>,
-         loader:({params})=>fetch(`https://e-state-server-jh3i81lpb-md-mahrufs-projects.vercel.app/property/${params.id}`)
+         loader:({params})=>fetch(`https://e-state-server.vercel.app/property/${params.id}`)
       
   },
   {
@@ -119,7 +119,7 @@ const router = createBrowserRouter([
   },{
    path:'/editProperty/:id',
    element:<EditProperty></EditProperty>,
-   loader:({params})=>fetch(`https://e-state-server-jh3i81lpb-md-mahrufs-projects.vercel.app/property/${params.id}`)
+   loader:({params})=>fetch(`https://e-state-server.vercel.app/property/${params.id}`)
   },
   {
     path:'/register',

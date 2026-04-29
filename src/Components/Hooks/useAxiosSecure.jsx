@@ -4,7 +4,7 @@ import React, { useContext, useEffect } from 'react';
 import { AuthContext } from '../Authentication/AuthProvider';
 import { useNavigate } from 'react-router-dom';
 const axiosSecure=axios.create({
-    baseURL:'https://e-state-server-jh3i81lpb-md-mahrufs-projects.vercel.app'
+    baseURL:'https://e-state-server.vercel.app'
 })
 const useAxiosSecure = () => {
     const {logOut}=useContext(AuthContext)
