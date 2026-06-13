@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
+
 const Reviews = () => {
-    
     const reviews = [
         {
             reviewerName: "Arif Hossain",
@@ -31,30 +31,24 @@ const Reviews = () => {
             propertyTitle: "Duplex House with Rooftop",
         },
     ];
+
     return (
-           
-                    <div>
-                        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-
-                            {reviews.map(item =>
-                                <div>
-                                    <SwiperSlide>
-                                        <div relative className='my-8 mx-24 flex flex-col items-center'>
-
-                                              <p className='uppercase'>{item.propertyTitle}</p>
-                                            <p className='py-8'> {item.description}</p>
-                                            <img className='absolute bottom-3 left-15 w-7.5 rounded-full' src={item.reviewerImage} alt="" />
-                                            <p className='absolute bottom-3 left-25 text-orange-400'>{item.reviewerName}</p>
-                                        </div>
-
-                                    </SwiperSlide>
-                                </div>
-
-                            )}
-                        </Swiper>
-                    </div>
-
-       
+        <div className='py-6'>
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                {reviews.map((item, index) =>
+                    <SwiperSlide key={index}>
+                        <div className='my-6 mx-4 sm:mx-12 md:mx-24 flex flex-col items-center px-4 sm:px-8 text-center'>
+                            <p className='uppercase font-semibold text-base sm:text-lg mb-2'>{item.propertyTitle}</p>
+                            <p className='py-4 text-sm sm:text-base text-gray-300'>{item.description}</p>
+                            <div className='flex items-center gap-3 mt-2'>
+                                <img className='w-10 h-10 rounded-full object-cover' src={item.reviewerImage} alt={item.reviewerName} />
+                                <p className='text-orange-400 font-medium'>{item.reviewerName}</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                )}
+            </Swiper>
+        </div>
     );
 };
 

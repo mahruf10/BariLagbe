@@ -33,9 +33,9 @@ const {signIn}=useContext(AuthContext)
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center px-4">
         <Toaster/>
-      <div className="w-full max-w-md border border-2 rounded-2xl shadow-lg p-8">
+      <div className="w-full max-w-md  border-2 rounded-2xl shadow-lg sm:p-8 p-6">
         <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">

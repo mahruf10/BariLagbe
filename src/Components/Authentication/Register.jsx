@@ -71,9 +71,9 @@ const  Register=()=>{
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center ">
+    <div className="min-h-screen flex items-center justify-center px-4">
       <Toaster/>
-      <div className="w-full max-w-md border border-2 rounded-2xl shadow-lg p-8">
+      <div className="w-full max-w-md  border-2 rounded-2xl shadow-lg p-6 md:p-8">
         <h2 className="text-2xl font-bold text-center mb-6">Sign Up</h2>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
