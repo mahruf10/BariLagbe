@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "./AuthProvider";
 import Swal from "sweetalert2";
 import toast, { Toaster } from "react-hot-toast";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
  const Login=() =>{
   const location=useLocation()
@@ -100,9 +100,9 @@ const {signIn}=useContext(AuthContext)
 
         <p className="text-sm text-center mt-6">
           Don’t have an account?{' '}
-          <a href="/register" className="text-blue-500 hover:underline">
+          <Link href="/register" className="text-blue-500 hover:underline">
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </div>
