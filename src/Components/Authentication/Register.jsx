@@ -4,6 +4,7 @@ import useAxiosPublic from "../Hooks/useAxiosPublic";
 import { AuthContext } from "./AuthProvider";
 import Swal from "sweetalert2";
 import toast, { Toaster } from "react-hot-toast";
+import { Link } from "react-router-dom";
 const img_hosting_key=import.meta.env.VITE_IMG_UPLOAD_API
 const img_hosting_api=`https://api.imgbb.com/1/upload?key=${img_hosting_key}`
 const  Register=()=>{
@@ -173,9 +174,9 @@ const  Register=()=>{
 
         <p className="text-sm text-center mt-6">
           Already have an account?{' '}
-          <a href="/login" className="text-blue-500 hover:underline">
+          <Link to="/login" className="text-blue-500 hover:underline">
             Login
-          </a>
+          </Link>
         </p>
       </div>
     </div>
