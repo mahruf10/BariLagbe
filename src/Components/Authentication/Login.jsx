@@ -100,7 +100,7 @@ const {signIn}=useContext(AuthContext)
 
         <p className="text-sm text-center mt-6">
           Don’t have an account?{' '}
-          <Link href="/register" className="text-blue-500 hover:underline">
+          <Link to="/register" className="text-blue-500 hover:underline">
             Sign up
           </Link>
         </p>

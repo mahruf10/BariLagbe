@@ -30,7 +30,7 @@ const AllProperties = () => {
                     <div className="card-body">
                         <h2 className="card-title text-base sm:text-lg">{item.title}</h2>
                         <p className='text-base-content/70 text-sm'>{item.location}</p>
-                        <span className='text-sm font-medium text-green-500'>
+                        <span className='text-sm font-medium'>
                             ${item.priceRange.min} - ${item.priceRange.max}
                         </span>
                         <small className='flex items-center gap-2'>

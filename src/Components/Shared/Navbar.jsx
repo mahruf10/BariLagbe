@@ -12,14 +12,14 @@ const Navbar = () => {
   }
   const links=[
     <>
-    <NavLink to={'/'}> <li><a>Home</a></li></NavLink> 
+   <li> <NavLink to={'/'}>Home</NavLink> </li> 
       <li>
         
        <NavLink to={'/allProperties'}> <summary>All Properties</summary> </NavLink>   
       </li>
-    {user && <NavLink to={'/dashboard'}> <li><a>Dashoard</a></li></NavLink>}  
+    {user && <li> <NavLink to={'/dashboard'}>Dashoard</NavLink></li>}  
 {
-  user ? <li onClick={handleLogout}><a>Logout</a></li> : <NavLink to={'/login'}> <li><a>Login</a></li></NavLink> 
+  user ? <li onClick={handleLogout}><a>Logout</a></li> :<li> <NavLink to={'/login'}>Login</NavLink></li>  
 }
    
       
@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <div>
           <Toaster/>
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="navbar bg-base-100 shadow-sm relative z-[9999]">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[9999] mt-3 w-52 p-2 shadow">
        {
         links
        }
