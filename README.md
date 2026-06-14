@@ -3,7 +3,7 @@
 # 🏠 BariLagbe
 ### *Find Your Dream Home — Buy, Sell & Manage Properties*
 
-(./public/barilagbe.png)
+![BariLagbe Banner](./public/barilagbe.png)
 
 [Live Site](https://bari-lagbe-ruby.vercel.app)
 
