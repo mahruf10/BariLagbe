@@ -1,16 +1,118 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏠 BariLagbe
+### *Find Your Dream Home — Buy, Sell & Manage Properties*
 
-Currently, two official plugins are available:
+(./src/assets/screenshots/banner.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Live Site](https://bari-lagbe-ruby.vercel.app)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## What is BariLagbe?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**BariLagbe** (বাড়ি লাগবে) is a real estate platform where agents list properties, users discover and negotiate their dream home, and admins keep everything running smoothly — all in one place.
+
+---
+
+##  How It Works
+
+```
+Agent Posts Property
+        ↓
+Admin Reviews →  Approve  or   Reject
+        ↓
+Property Goes Live on the Platform
+        ↓
+User Browses & Adds to Wishlist
+        ↓
+User Makes an Offer (within agent's price range)
+        ↓
+Agent Reviews Offer →  Accept  or   Decline
+        ↓
+User Pays & Property is Sold 
+```
+
+---
+
+##  Three Roles, One Platform
+
+###  User
+-Authentication system
+- Browse all verified properties
+- Add properties to personal **Wishlist**
+- Make a **price offer** within the agent's listed range
+- Pay online after offer is accepted
+- Track purchased properties from dashboard
+
+###  Agent
+- Post new property listings with details & images
+- Wait for **Admin approval** before going live
+- View all incoming **offers from users**
+- Accept or decline offers
+- Track sold properties
+
+###  Admin
+- Review all **pending properties** from agents
+- **Approve** listings to make them public
+- **Reject** inappropriate or incomplete listings
+- View and manage all **Users & Agents**
+- Promote a User → Agent or demote Agent → User
+- Full platform oversight from admin dashboard
+
+---
+
+##  Screenshots
+
+| Home | Properties | Wishlist |
+|---|---|---|
+| ![home](./public/home.png) | ![properties](./public/properties.png) | ![wishlist](./public/wishlist.png) |
+
+| Agent Dashboard | Admin Dashboard | Payment |
+|---|---|---|
+| ![agent](./public/agentdashboard.png) | ![admin](./public/admindashboard.png) |
+
+---
+
+##  Built With
+
+**Frontend**
+- React + React Router
+- Tailwind CSS + DaisyUI
+- TanStack Query (data fetching)
+- Firebase Authentication
+-toast
+**Backend**
+- Node.js + Express.js
+- MongoDB 
+- JWT (HTTP-only cookies)
+- Stripe (payment)
+
+---
+
+##  Run Locally
+
+```bash
+git clone https://github.com/your-username/barilagbe-client.git
+cd barilagbe-client
+npm install
+npm run dev
+```
+---
+
+##  Security Highlights
+
+- JWT stored in **HTTP-only cookies** — safe from XSS
+- Role-based route guards on both frontend and backend
+- Admin-only APIs verified server-side
+- Stripe handles all payment data — no card info stored
+
+---
+
+<div align="center">
+
+Made with  by **[MAHRUF](https://github.com/mahruf10)**
+
+</div>
