@@ -3,7 +3,7 @@
 # 🏠 BariLagbe
 ### *Find Your Dream Home — Buy, Sell & Manage Properties*
 
-(./src/assets/screenshots/barilagbe.png)
+(./public/barilagbe.png)
 
 [Live Site](https://bari-lagbe-ruby.vercel.app)
 
@@ -69,10 +69,6 @@ User Pays & Property is Sold
 | Home | Properties | Wishlist |
 |---|---|---|
 | ![home](./public/home.png) | ![properties](./public/properties.png) | ![wishlist](./public/wishlist.png) |
-
-| Agent Dashboard | Admin Dashboard | 
-|---|---|---|
-| ![agent](./public/agentdashboard.png) | ![admin](./public/admindashboard.png) |
 
 ---
 
